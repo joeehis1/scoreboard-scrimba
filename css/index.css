@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "CursedTimer";
+  src: url("../cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  width: calc(100% - 5.2rem);
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+body {
+  font-family: "CursedTimer";
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+button {
+  font-family: "CursedTimer";
+  font-size: 1.125rem;
+}
+
+.scorecard h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.scorecard .score {
+  font-size: 5.625rem;
+}
+
+body {
+  background-color: hsl(229deg, 47%, 20%);
+  color: hsl(0deg, 0%, 93%);
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border-color: hsl(224deg, 44%, 73%);
+  color: hsl(0deg, 0%, 93%);
+  display: inline-block;
+}
+
+.scorecard .score {
+  color: hsl(349deg, 93%, 64%);
+  background-color: hsl(353deg, 100%, 2%);
+}
+
+header {
+  padding: 1.3125rem;
+}
+
+button {
+  padding: 0.5625rem 0.4375rem;
+  border-radius: 5px;
+}
+
+.scorecard {
+  text-align: center;
+  margin-bottom: 1.3125rem;
+}
+.scorecard h2 {
+  margin-bottom: 1.3125rem;
+  line-height: 0.9;
+}
+.scorecard .score {
+  margin: 0;
+  display: inline-block;
+  padding: 1.25rem 5rem;
+  animation: blink 400ms ease 1s infinite alternate both;
+}
+
+.reset-panel {
+  margin-bottom: 1.3125rem;
+}
+
+.btn-group {
+  display: grid;
+  gap: 0.6875rem;
+  grid-template-areas: "btn-1 btn-2 btn-3" ". btn-4 ." ". btn-5 .";
+}
+.btn-group button:nth-child(1) {
+  grid-area: btn-1;
+}
+.btn-group button:nth-child(2) {
+  grid-area: btn-2;
+}
+.btn-group button:nth-child(3) {
+  grid-area: btn-3;
+}
+.btn-group button:nth-child(4) {
+  grid-area: btn-4;
+}
+.btn-group button:nth-child(5) {
+  grid-area: btn-5;
+}
+
+.app-display {
+  display: grid;
+  text-align: center;
+}
+@media (min-width: 615px) {
+  .app-display {
+    grid-template-columns: 1fr auto 1fr;
+  }
+  .app-display .reset-panel {
+    align-self: center;
+  }
+}
+
+@keyframes blink {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: hsl(349deg, 93%, 64%);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

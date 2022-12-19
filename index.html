@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>SCOREBOARD</h1>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="app app-display">
+                    <div id="home" class="scorecard">
+                        <h2 class="team">HOME</h2>
+                        <p data-score="0" class="score" id="score-display">0</p>
+                        <p data-timeouts="0" id="timeout-display">Timeouts:</p>
+                        <p data-fouls="0" id="foul-display">Fouls:</p>
+
+                        <div class="btn-group">
+                            <button id="btn-inc-one">+1</button>
+                            <button id="btn-inc-two">+2</button>
+                            <button id="btn-inc-three">+3</button>
+                            <button id="btn-inc-timeout">Timeout</button>
+                            <button id="btn-inc-foul">Foul</button>
+                        </div>
+                    </div>
+                    <div class="reset-panel">
+                        <button id="reset">Reset</button>
+                    </div>
+                    <div id="away" class="scorecard">
+                        <h2 class="team">GUEST</h2>
+                        <p data-score="0" class="score" id="score-display">0</p>
+                        <p data-timeouts="0" id="timeout-display">Timeouts:</p>
+                        <p data-fouls="0" id="foul-display">Fouls:</p>
+                        <div class="btn-group">
+                            <button id="btn-inc-one">+1</button>
+                            <button id="btn-inc-two">+2</button>
+                            <button id="btn-inc-three">+3</button>
+                            <button id="btn-inc-timeout">Timeout</button>
+                            <button id="btn-inc-foul">Foul</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="./main.js"></script>
+    </body>
+</html>
