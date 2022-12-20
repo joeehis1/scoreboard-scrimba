@@ -107,6 +107,7 @@ resetBtn.addEventListener('click', () => {
         score = 0
         displayElem.textContent = score
         displayElem.dataset.score = score
+        displayElem.style.backgroundColor = 'black'
     })
 })
 
